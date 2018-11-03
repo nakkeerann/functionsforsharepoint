@@ -1,8 +1,8 @@
 var request = require('request-promise');
 var spauth = require('node-sp-auth');
 var siteUrl = 'https://nakkeerann.sharepoint.com';
-var clientId = 'ac75fede-95f5-4c00-9256-f163d1beb46a';
-var clientSecret = '8T3dEmEcqu2U5pYpwwgfhwECk7vc0ybszB7bUaPQ9qI=';
+var clientId = 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx';
+var clientSecret = 'client secret';
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     spauth.getAuth(siteUrl, {

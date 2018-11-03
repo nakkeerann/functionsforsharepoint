@@ -20,10 +20,10 @@ module.exports = async function (context, req) {
             headers: data.headers,
             json: true
         }).then(function (listData) {
-            var listResults = listData.d.results;
+            var listResults = listData.value;
             context.res = {
                 // status: 200, /* Defaults to 200 */
-                body: listResults.length
+                body: listResults
             };    
         });
     /*if (req.query.name || (req.body && req.body.name)) {
